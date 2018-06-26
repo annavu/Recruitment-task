@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 
 @import 'variables';
+@import 'container';
+@import 'altcoins';
+@import 'ethereum';
+@import 'cells';
 
 
 * {
@@ -14,79 +18,16 @@ body {
   background-color: $bg-body;
 }
 
-.container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:97%;
-  height: 110px;
-  background-color: $white;
-}
-
-.altcoins {
-    height: 110px;
-    width: 26px; 
-    background-color: $altcoins;
-    color: $white;
-    /* transform: rotate(-90deg);  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-left: -6px; */
-    
-}
-
-.altcoins__text {
-   transform: rotate(-90deg);
-   font-size: 14px;
-}
-
-.ethereum {
-  color: $main-font;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 18px 23px;
-  width: 25%;
-}
-
-.ethereum__title {
-	height: 40px;
-	width: 199px;
-	font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 6px;
-}
-
-.line {
-	font-size: 10px;
-	line-height: 16px;
-  display: flex;
-  align-items: center;
-}
 
 
-.line__dot {
-	height: 7px;
-	width: 7px;
-  background-color: $altcoins;
-  border-radius: 50%;
-  margin-right: 9.5px;
-}
 
-.line__img {
-  margin: 3px 6px 0 -3.5px;
- /* margin-top: 3px;
- margin-left: -3.5px; */
-}
 
-.cells {
-  display: flex;
-  align-items: center;
-  width: 64%;
-  text-align: center;
-}
+// .cells {
+//   display: flex;
+//   align-items: center;
+//   width: 64%;
+//   text-align: center;
+// }
 
 .cell {
   width: 13.41%;
@@ -186,50 +127,19 @@ body {
 
 
 
-@media(max-width: 1200px) {
-  .container {
-    width: 100%;
-    /* flex-wrap: wrap; */
-  }
-
-  .altcoins {
-    width: 20px;;
-  }
-}
-
 
 @media (max-width:940px) {
-  .container {
-    height: auto;
-    flex-wrap: wrap;
-    position: relative;
-  }
-
-   .ethereum {
-    width: 32%;
-  }
-
+  
   .cells {
     width: 65.8%;
   } 
 
-  .altcoins {
-    margin-top:-7px;
-  }
-
-  /* .altcoins {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  } */
+  
 }
 
 
 @media(max-width:908px) {
-  .ethereum {
-    width: 29.3%
-  }
+  
 
   .cells {
     width: 68.1%;
@@ -239,33 +149,9 @@ body {
 
 @media (max-width:768px) {
 
-  .container {
-    flex-direction: column;
-    height: auto;
-    position: relative;
-  }
-
-  .altcoins {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    margin-top:0;
-    /* height: 32.3%; */;
-  }
-
-  .altcoins__text {
-  }
-
-  .ethereum {
-    width:95%;
-    margin-left: 20px;
-  }
+ 
 
 
-  .line--hide {
-    display: none;
-  }
 
   .action {
     order:3;

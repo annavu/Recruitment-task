@@ -1,0 +1,52 @@
+.ethereum {
+  color: $main-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px 23px;
+  width: 25%;
+  @media(max-width:940px) {
+    width: 32%;
+  }
+  @media(max-width: 908px) {
+    width: 29.3%;
+  }
+  @media(max-width: 768px) {
+    width:95%;
+    margin-left: 20px;
+  }
+
+  .ethereum__title {
+    height: 40px;
+    width: 199px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 6px;
+  }
+
+  .line {
+    font-size: 10px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    .line__img {
+      margin: 3px 6px 0 -3.5px;
+    }
+
+    .line__dot {
+      height: 7px;
+      width: 7px;
+      background-color: $altcoins;
+      border-radius: 50%;
+      margin-right: 9.5px;
+    }
+  }
+
+  .line--hide {
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+
+}

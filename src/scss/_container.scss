@@ -1,0 +1,20 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:97%;
+  height: 110px;
+  background-color: $white;
+  position: relative;
+  @media(max-width:1200px) {
+    width: 100%;
+  }
+  @media(max-width: 940px) {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+}

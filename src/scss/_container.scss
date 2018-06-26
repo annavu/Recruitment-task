@@ -1,11 +1,12 @@
 .container {
-  margin: 0 auto;
+  margin: 20px auto 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   width:97%;
   height: 110px;
   background-color: $white;
+  box-shadow: $box-shadow-container;
   position: relative;
   @media(max-width:1200px) {
     width: 100%;

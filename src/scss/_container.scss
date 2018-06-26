@@ -1,5 +1,5 @@
 .container {
-  margin: 20px auto 10px;
+  margin: 0 auto 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,4 +18,8 @@
   @media(max-width: 768px) {
     flex-direction: column;
   }
+}
+
+.container--top {
+  margin-top: 20px;
 }

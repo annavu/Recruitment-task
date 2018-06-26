@@ -15,6 +15,10 @@
     width:95%;
     margin-left: 20px;
   }
+  @media(max-width:383px) {
+    width: 90%;
+    margin-left: 0;
+  }
 
   .ethereum__title {
     height: 40px;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 
+@import 'variables';
 
 
 * {
@@ -10,7 +11,7 @@
 
 body {
   font-family: 'Poppins';
-  background-color: #e7ecf5;
+  background-color: $bg-body;
 }
 
 .container {
@@ -20,14 +21,14 @@ body {
   align-items: center;
   width:97%;
   height: 110px;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .altcoins {
     height: 110px;
     width: 26px; 
-    background-color: #FFBE33;
-    color: #fff;
+    background-color: $altcoins;
+    color: $white;
     /* transform: rotate(-90deg);  */
     display: flex;
     justify-content: center;
@@ -42,7 +43,7 @@ body {
 }
 
 .ethereum {
-  color: #474747;
+  color: $main-font;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +70,7 @@ body {
 .line__dot {
 	height: 7px;
 	width: 7px;
-  background-color: #FFBE33;
+  background-color: $altcoins;
   border-radius: 50%;
   margin-right: 9.5px;
 }
@@ -89,12 +90,12 @@ body {
 
 .cell {
   width: 13.41%;
-  border-left: 1px solid rgba(151,151,151,0.2);
+  border-left: $border;
   padding: 17.5px 0;
 }
 
 .cell--last {
-  border-right: 1px solid rgba(151,151,151,0.2);
+  border-right: $border;
 }
 
 .main-cell {
@@ -106,12 +107,12 @@ body {
 }
 
 .cell__number--active {
-  color: #d83550;
+  color: $active;
 }
 
 .cell__text {
   font-size: 10px;
-  color: #474747;
+  color: $main-font;
 }
 
 
@@ -128,22 +129,22 @@ body {
   font-size: 10px;
   font-weight: 600;
   text-align: center;
-  text-shadow: 0 1px 1px 0 rgba(95,95,95,0.3);
-  background: linear-gradient(90deg, #D22D4F 0%, #F86358 100%);
-  box-shadow: 0 2px 4px 0 rgba(250,91,30,0.34);
-  border-radius: 4px;
+  text-shadow: $text-shadow;
+  background: $gradient;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
   padding: 10px 11px;
   border: none;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    transition: $transition-btn;
+  }
 }
 
-.btn:hover {
-	background: linear-gradient(90deg, #D22D4F 0%, #F86358 100%);
-  box-shadow: 0 4px 7px 0 rgba(60,23,10,0.34);
-  transition: 0.3s;
-}
 
 .icons {
   margin: 10px 0;
@@ -160,26 +161,29 @@ body {
 }
 
 .icons__eye {
-  background: url('../img/oko.png');
+  background: $eye;
   background-position: center;
+
+  &:hover {
+    background: $eye-hover;
+    background-position: center;
+    transition: $transition-icon;
+  }
+
 }
 
-.icons__eye:hover {
-  background: url('../img/okohover.png');
-  background-position: center;
-  transition: 0.5s;
-}
 
 .icons__balance {
-  background: url('../img/waga.png');
+  background: $balance;
   background-position: center;
+
+  &:hover {
+    background: $balance-hover;
+    background-position: center;
+    transition: $transition-icon;
+  }
 }
 
-.icons__balance:hover {
-  background: url('../img/wagahover.png');
-  background-position: center;
-  transition: 0.5s;
-}
 
 
 @media(max-width: 1200px) {

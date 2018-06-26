@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 
+
 @import 'variables';
+@import 'body';
 @import 'container';
 @import 'altcoins';
 @import 'ethereum';
 @import 'cells';
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins';
-  background-color: $bg-body;
-}
 
 
 

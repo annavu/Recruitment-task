@@ -12,3 +12,5 @@ $ npm install (install dependencies)
 $ gulp (dev-server, for development)
 
 $ gulp build (create dist folder - compiled, minified code)
+
+[LIVE](https://annavu.github.io/recruitment-task/dist/)

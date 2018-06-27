@@ -7,6 +7,7 @@ task is to implement 2 responsive components based on provided project
 - SASS
 - Gulp
 
-$npm install (install dependencies)
+$ npm install (install dependencies)
 
-$gulp (dev-server, for development)
+$ gulp (dev-server, for development)
+$ gulp build (create dist folder - compiled, minified code)

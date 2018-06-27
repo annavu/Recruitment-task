@@ -18,7 +18,9 @@
 
   .altcoins__text {
     transform: rotate(-90deg);
-    font-size: 14px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-shadow: $text-shadow-altcoins;
    }
 }
 

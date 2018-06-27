@@ -4,7 +4,6 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
-// const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const del = require('del');
@@ -25,14 +24,6 @@ gulp.task('sass', function() {
 });
 
 
-//move js files to src folder
-
-// gulp.task('js', function() {
-//   return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
-//          .pipe(gulp.dest('src/js'))
-//          .pipe(browserSync.stream());
-// });
-
 //watch sass and server
 
 gulp.task('serve',['sass'], function() {
@@ -51,16 +42,6 @@ gulp.task('css', function(){
   .pipe(cleanCss())
   .pipe(gulp.dest('dist/css'));
 });
-
-
-
-//minify js files and move to dist
-// gulp.task('uglify', function(){
-//   return gulp.src('src/js/**/*.js')
-//       .pipe(uglify())
-//       .pipe(gulp.dest('dist/js'));
-// });
-
 
 
 
@@ -88,7 +69,7 @@ gulp.task('clean', function() {
 });
 
 
-
+// build dist folder
 gulp.task('build', function() {
   runSequence('clean', ['css', 'copy', 'minify']);
 
@@ -104,4 +85,5 @@ gulp.task('servefordist', ['build'], function() {
 
 });
 
+//start server - default task 
 gulp.task('default', ['serve']);
